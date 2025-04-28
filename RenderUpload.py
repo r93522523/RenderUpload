@@ -11,7 +11,7 @@ def upload_file():
     if file.filename == '':
         return 'No selected file'
     if file:
-        save_path = os.path.join('/mnt/data', file.filename)
+        save_path = os.path.join('/opt/render/project/src', file.filename)
         file.save(save_path)
         return f'File saved to {save_path}'
 
